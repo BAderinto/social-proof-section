@@ -1,0 +1,186 @@
+
+$very-dark-magenta: hsl(300, 43%, 22%);
+$soft-pink: hsl(333, 80%, 67%);
+$dark-grayish-magenta: hsl(303, 10%, 53%);
+$light-grayish-magenta: hsl(300, 24%, 96%);
+$white: hsl(0, 0%, 100%);
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=League+Spartan:wght@400;500;700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  
+    body {
+        font-size: 15px;
+        min-height: 100vh;
+    
+        display: flex;
+        flex-direction: column;
+
+        background-color: $white;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 0.7rem;
+        font-family: 'Lexend Deca', sans-serif;
+    }
+  }
+
+  .main{
+    width: 20rem;
+    text-align: center;
+
+    &__title{
+        font-family: 'League Spartan', sans-serif;
+        font-weight: 700;
+        color: $very-dark-magenta;
+        margin-bottom: 1rem;
+    }
+    &__description{
+        font-family: 'Big Shoulders Display', cursive;
+        color: $dark-grayish-magenta;
+        margin-bottom: 2rem;
+    }
+    .ratings{
+        font-family: 'League Spartan', sans-serif;
+        color: $very-dark-magenta;
+        list-style-type: none;
+        &-1,&-2,&-3 {
+            margin-bottom: 1rem;
+            background-color: $light-grayish-magenta;
+            width: 100%;
+            height: 3rem;
+        }
+    }
+
+    .all-feedbacks{
+        margin-top: 3rem;
+
+        .feedbacks{
+            font-family: 'League Spartan', sans-serif;
+            background-color: $very-dark-magenta;
+            margin-bottom: 1rem;
+            width: 100%;
+            border-radius: 0.5rem;
+    
+                &-buyer{
+                    display: flex;
+                    margin-bottom: 1rem;
+                    padding-top: 2rem;
+    
+                    &-info{
+                        align-items: center;
+                        h4 {
+                            font-weight: 500;
+                            margin-left: 1rem;
+                            color: $light-grayish-magenta;
+                        }
+                        span {
+                            font-weight: 400;
+                            margin-left: 1rem;
+                            color: $soft-pink;
+                        }
+                    }
+    
+                    &-images{
+                        margin-left: 1rem;
+                        img {
+                        // Image size 
+                        height: 50px;
+                        width: 50px;
+                        background-size: 100%;
+                    
+                        // To have rounded image 
+                        border-radius: 100%;
+                        background-position: center;
+                        }
+                    }
+    
+                }
+    
+                p {
+                    color: $light-grayish-magenta;
+                    text-align: left;
+                    margin-left: 1rem;
+                    padding-bottom: 1.5rem;
+                }
+            }
+    }
+    
+
+    }
+    
+
+  footer{
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+  }
+
+
+
+@media (min-width: 768px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      
+        body {
+            font-size: 15px;
+            min-height: 100vh;
+        
+            display: flex;
+            flex-direction: column;
+    
+            background-color: $transparent-white-paragraphs;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem 0.7rem;
+        }
+      }
+
+    // main section here 
+      main {
+
+        &__col{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        &-1{
+            width: 18rem;
+            border-radius: 1.0rem 0rem 0rem 1.0rem;
+            &-buttons{
+                border-radius: 1.5rem;
+                margin: 1rem 2rem;
+                height: 5vh;
+                width: 7vw;
+            }
+        }
+        &-2{
+            width: 18rem;
+            &-buttons{
+                border-radius: 1.5rem;
+                margin: 1rem 2rem;
+                height: 5vh;
+                width: 7vw;
+            }
+        }
+        &-3{
+            width: 18rem;
+            border-radius:  0rem 1.0rem 1.0rem 0rem;
+            &-buttons{
+                border-radius: 1.5rem;
+                margin: 1rem 2rem;
+                height: 5vh;
+                width: 7vw;
+            }
+        }
+
+        }
+    }
+}
