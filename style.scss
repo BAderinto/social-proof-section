@@ -31,17 +31,21 @@ $white: hsl(0, 0%, 100%);
     width: 20rem;
     text-align: center;
 
-    &__title{
-        font-family: 'League Spartan', sans-serif;
-        font-weight: 700;
-        color: $very-dark-magenta;
-        margin-bottom: 1rem;
+    .main__header{
+        &-title{
+            font-family: 'League Spartan', sans-serif;
+            font-weight: 700;
+            color: $very-dark-magenta;
+            margin-bottom: 1rem;
+        }
+        &-description{
+            font-family: 'Big Shoulders Display', cursive;
+            color: $dark-grayish-magenta;
+            margin-bottom: 2rem;
+        }
     }
-    &__description{
-        font-family: 'Big Shoulders Display', cursive;
-        color: $dark-grayish-magenta;
-        margin-bottom: 2rem;
-    }
+
+    
     .ratings{
         font-family: 'League Spartan', sans-serif;
         color: $very-dark-magenta;
@@ -133,54 +137,100 @@ $white: hsl(0, 0%, 100%);
         body {
             font-size: 15px;
             min-height: 100vh;
-        
-            display: flex;
-            flex-direction: column;
-    
-            background-color: $transparent-white-paragraphs;
-            justify-content: center;
-            align-items: center;
-            padding: 1rem 0.7rem;
         }
       }
 
     // main section here 
-      main {
+    .main{
+        width: 20rem;
+        text-align: center;
 
-        &__col{
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        &-1{
-            width: 18rem;
-            border-radius: 1.0rem 0rem 0rem 1.0rem;
-            &-buttons{
-                border-radius: 1.5rem;
-                margin: 1rem 2rem;
-                height: 5vh;
-                width: 7vw;
-            }
+        .main__header{
+
+        &-title{
+            font-family: 'League Spartan', sans-serif;
+            font-weight: 700;
+            color: $very-dark-magenta;
+            margin-bottom: 1rem;
         }
-        &-2{
-            width: 18rem;
-            &-buttons{
-                border-radius: 1.5rem;
-                margin: 1rem 2rem;
-                height: 5vh;
-                width: 7vw;
-            }
-        }
-        &-3{
-            width: 18rem;
-            border-radius:  0rem 1.0rem 1.0rem 0rem;
-            &-buttons{
-                border-radius: 1.5rem;
-                margin: 1rem 2rem;
-                height: 5vh;
-                width: 7vw;
-            }
+        &-description{
+            font-family: 'Big Shoulders Display', cursive;
+            color: $dark-grayish-magenta;
+            margin-bottom: 2rem;
         }
 
         }
-    }
+    
+
+        .all-ratings{
+            .ratings{
+                font-family: 'League Spartan', sans-serif;
+                color: $very-dark-magenta;
+                list-style-type: none;
+                &-1,&-2,&-3 {
+                    margin-bottom: 1rem;
+                    background-color: $light-grayish-magenta;
+                    width: 100%;
+                    height: 3rem;
+                }
+            }
+        }
+        
+    
+        .all-feedbacks{
+            margin-top: 3rem;
+    
+            .feedbacks{
+                font-family: 'League Spartan', sans-serif;
+                background-color: $very-dark-magenta;
+                margin-bottom: 1rem;
+                width: 100%;
+                border-radius: 0.5rem;
+        
+                    &-buyer{
+                        display: flex;
+                        margin-bottom: 1rem;
+                        padding-top: 2rem;
+        
+                        &-info{
+                            align-items: center;
+                            h4 {
+                                font-weight: 500;
+                                margin-left: 1rem;
+                                color: $light-grayish-magenta;
+                            }
+                            span {
+                                font-weight: 400;
+                                margin-left: 1rem;
+                                color: $soft-pink;
+                            }
+                        }
+        
+                        &-images{
+                            margin-left: 1rem;
+                            img {
+                            // Image size 
+                            height: 50px;
+                            width: 50px;
+                            background-size: 100%;
+                        
+                            // To have rounded image 
+                            border-radius: 100%;
+                            background-position: center;
+                            }
+                        }
+        
+                    }
+        
+                    p {
+                        color: $light-grayish-magenta;
+                        text-align: left;
+                        margin-left: 1rem;
+                        padding-bottom: 1.5rem;
+                    }
+                }
+        }
+        
+    
+        }
 }
