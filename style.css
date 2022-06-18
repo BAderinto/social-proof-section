@@ -20,6 +20,9 @@
   width: 20rem;
   text-align: center;
 }
+.main .main__header {
+  background-image: url("./images/bg-pattern-top-mobile.svg");
+}
 .main .main__header-top-title {
   font-family: "League Spartan", sans-serif;
   font-weight: 700;
@@ -45,6 +48,7 @@
 }
 .main .all-feedbacks {
   margin-top: 3rem;
+  background-image: url("./images/bg-pattern-bottom-mobile.svg");
 }
 .main .all-feedbacks .feedbacks-1, .main .all-feedbacks .feedbacks-2, .main .all-feedbacks .feedbacks-3 {
   font-family: "League Spartan", sans-serif;
@@ -126,6 +130,7 @@ footer .attribution a {
     justify-content: center;
     align-items: center;
     text-align: left;
+    background-image: url("./images/bg-pattern-top-desktop.svg");
   }
   .main .main__header-top {
     margin-right: 2rem;
@@ -172,6 +177,7 @@ footer .attribution a {
     margin-top: 3rem;
     display: flex;
     flex-direction: row;
+    background-image: url("./images/bg-pattern-bottom-desktop.svg");
   }
   .main .all-feedbacks .feedbacks-1 {
     font-family: "League Spartan", sans-serif;

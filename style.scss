@@ -32,6 +32,7 @@ $white: hsl(0, 0%, 100%);
     text-align: center;
 
     .main__header{
+        background-image: url('./images/bg-pattern-top-mobile.svg');
         &-top{
 
         &-title{
@@ -66,6 +67,7 @@ $white: hsl(0, 0%, 100%);
 
     .all-feedbacks{
         margin-top: 3rem;
+        background-image: url('./images/bg-pattern-bottom-mobile.svg');
 
         .feedbacks-1, .feedbacks-2, .feedbacks-3 {
             font-family: 'League Spartan', sans-serif;
@@ -170,6 +172,7 @@ $white: hsl(0, 0%, 100%);
             justify-content: center;
             align-items: center;
             text-align: left;
+            background-image: url('./images/bg-pattern-top-desktop.svg');
 
             &-top{
                 margin-right: 2rem;
@@ -225,6 +228,7 @@ $white: hsl(0, 0%, 100%);
             margin-top: 3rem;
             display: flex;
             flex-direction: row;
+            background-image: url('./images/bg-pattern-bottom-desktop.svg');
 
     
             .feedbacks-1{
